@@ -5,8 +5,8 @@ import rock from "./images/rock.png";
 import scissors from "./images/scissors.png";
 
 function App() {
-  const [userImg, setUserImg] = useState(null);
-  const [computerImg, setComputerImg] = useState(null);
+  const [userImg, setUserImg] = useState("");
+  const [computerImg, setComputerImg] = useState("");
   const [userPoints, setUserPoints] = useState(0);
   const [computerPoints, setComputerPoints] = useState(0);
   const [click, setClick] = useState(0);
@@ -68,8 +68,8 @@ function App() {
           className="btnRes"
           onClick={() => {
             setStop(false);
-            setUserImg(null);
-            setComputerImg(null);
+            setUserImg("");
+            setComputerImg("");
             setUserPoints(0);
             setComputerPoints(0);
             setTurnResult("Let the game begin");
