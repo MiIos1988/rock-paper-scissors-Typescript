@@ -97,7 +97,7 @@ function App() {
         <img
           className="img1"
           src={
-            userImg === null
+            userImg === ""
               ? paper
               : userImg === "rock"
               ? rock
@@ -109,7 +109,7 @@ function App() {
         />
         <img
           src={
-            computerImg === null
+            computerImg === ""
               ? paper
               : computerImg === "rock"
               ? rock
@@ -124,6 +124,7 @@ function App() {
         {data.map((a, id) => {
           return (
             <button
+
               className="btn"
               key={id}
               onClick={() => {
